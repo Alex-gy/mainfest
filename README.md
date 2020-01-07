@@ -5,6 +5,7 @@
 #### 3. 部署traefik ingress
 #### 4. 增加traefik 管理后台路由规则
 #### 5. 暴露traefik ingress服务
+#### 6. 部署测试应用并增加应用访问路由规则
 
 
 #### 增加https访问
