@@ -24,7 +24,7 @@ traefik-ingress-service   LoadBalancer   10.2.239.177   106.75.6.224   80:46863/
 
 
 ### 6. 部署测试应用并增加应用访问路由规则（默认http访问）
-### 7. 增加https访问
+### 7. 在whoami应用上增加https访问
 
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=jianyu.ucloud.cn"
