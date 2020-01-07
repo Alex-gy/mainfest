@@ -27,12 +27,16 @@ spec:
         - name: websecure
           containerPort: 443
           hostPort: 443
+        - name: traefik-admin
+          containerPort: 8080
+          hostPort: 80
         - name: mongo
           hostPort: 27017
           containerPort: 27017
         args:
         - --entryPoints.web.address=:80
         - --entryPoints.websecure.address=:443
+        - --entryPoints.traefik-admin.address=:8080
         - --entryPoints.mongo.address=:27017
         - --api=true
         - --api.dashboard=true
