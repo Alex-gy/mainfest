@@ -2,8 +2,9 @@
 ### 0.实现目标
 ```
 LoadBalancer ---> jianyu.traefik.com  访问traefik后台
-LoadBalancer ---> jianyu.ucloud.com   访问部署的web测试服务
-LoadBalancer ---> mongo.ucloud.com    访问部署的mongo服务
+LoadBalancer ---> jianyu.ucloud.com   访问部署的web测试服务（http）
+LoadBalancer ---> jianyu.ucloud.com   访问部署的web测试服务（https）
+LoadBalancer ---> mongo.ucloud.com    访问部署的mongo服务（TCP）
 ```
 ### 1. 创建crd资源
 ### 2. 绑定rbac权限
