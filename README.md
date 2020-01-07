@@ -1,4 +1,8 @@
-#### some traefik2.1 yaml mainfest
+#### traefik2.1 ingress文档
+
+#### 1. 创建crd资源
+#### 2. 绑定权限
+#### 3.
 
 
 #### 增加https访问
