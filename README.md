@@ -5,6 +5,19 @@
 ### 3. 部署traefik ingress
 ### 4. 增加traefik 管理后台路由规则
 ### 5. 暴露traefik ingress服务
+```
+➜  .kube ku get service -n kube-system 
+NAME                      TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)                                      AGE
+csi-udisk-controller      ClusterIP      10.2.118.46    <none>         12345/TCP                                    3h45m
+csi-ufile-controller      ClusterIP      10.2.229.44    <none>         12345/TCP                                    3h45m
+kube-dns                  ClusterIP      10.2.0.2       <none>         53/UDP,53/TCP,9153/TCP                       3h45m
+metrics-server            ClusterIP      10.2.213.16    <none>         443/TCP                                      3h45m
+traefik-ingress-service   LoadBalancer   10.2.239.177   106.75.6.224   80:46863/TCP,443:36351/TCP,27017:49441/TCP   3m9s
+
+修改本地hosts文件 添加 jianyu.traefik.com  106.75.6.224
+```
+
+
 ### 6. 部署测试应用并增加应用访问路由规则（默认http访问）
 ### 7. 增加https访问
 
