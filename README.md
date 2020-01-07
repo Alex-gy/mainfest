@@ -1,4 +1,4 @@
-### traefik2.1 ngress学习文档
+### traefik2.1 ingress学习文档
 
 #### 1. 创建crd资源
 #### 2. 绑定rbac权限
