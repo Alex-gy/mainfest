@@ -1,14 +1,13 @@
-### traefik2.1 ingress学习文档
+## traefik2.1 ingress学习文档
 
-#### 1. 创建crd资源
-#### 2. 绑定rbac权限
-#### 3. 部署traefik ingress
-#### 4. 增加traefik 管理后台路由规则
-#### 5. 暴露traefik ingress服务
-#### 6. 部署测试应用并增加应用访问路由规则
+### 1. 创建crd资源
+### 2. 绑定rbac权限
+### 3. 部署traefik ingress
+### 4. 增加traefik 管理后台路由规则
+### 5. 暴露traefik ingress服务
+### 6. 部署测试应用并增加应用访问路由规则
+### 7. 增加https访问
 
-
-#### 增加https访问
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=jianyu.ucloud.cn"
 
