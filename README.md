@@ -1,9 +1,10 @@
 ## traefik2.1 ingress学习文档
 ### 0.实现目标
+```
 LoadBalancer ---> jianyu.traefik.com  访问traefik后台
 LoadBalancer ---> jianyu.ucloud.com   访问部署的web测试服务
 LoadBalancer ---> mongo.ucloud.com    访问部署的mongo服务
-
+```
 ### 1. 创建crd资源
 ### 2. 绑定rbac权限
 ### 3. 部署traefik ingress
