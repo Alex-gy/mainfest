@@ -24,7 +24,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-  - match: Host(`who.qikqiak.com`) && PathPrefix(`/tls`)
+  - match: Host(`jianyu.ucloud.cn`) && PathPrefix(`/tls`)
     kind: Rule
     services:
     - name: whoami
