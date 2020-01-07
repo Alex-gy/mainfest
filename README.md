@@ -49,7 +49,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-  - match: Host(`jianyu.ucloud.cn`) && PathPrefix(`/tls`)
+  - match: Host(`jianyu.ucloud.com`) && PathPrefix(`/tls`)
     kind: Rule
     services:
     - name: whoami
