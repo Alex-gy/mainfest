@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: wrringressroute
+  namespace: default
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`wrr.ucloud.com`)
+    kind: Rule
+    services:
+    - name: app-wrr
+      kind: TraefikService
