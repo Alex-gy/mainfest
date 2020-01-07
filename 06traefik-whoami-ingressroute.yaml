@@ -1,0 +1,13 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: simpleingressroute
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`jianyu.ucloud.com`)
+    kind: Rule
+    services:
+    - name: whoami
+      port: 80
