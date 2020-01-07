@@ -3,8 +3,10 @@ kind: IngressRoute
 metadata:
   name: traefik-dashboard
 spec:
+  entryPoints:
+  - traefik
   routes:
-  - match: Host(`traefik.domain.com`)
+  - match: Host(`jianyu.ucloud.com`)
     kind: Rule
     services:
     - name: api@internal
