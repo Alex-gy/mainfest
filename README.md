@@ -13,4 +13,23 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt
 $ kubectl create secret tls who-tls --cert=tls.crt --key=tls.key
 secret/who-tls created
 ```
+#### 创建一个 HTTPS 访问应用的 IngressRoute 对象
 
+```
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroutetls
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - match: Host(`who.qikqiak.com`) && PathPrefix(`/tls`)
+    kind: Rule
+    services:
+    - name: whoami
+      port: 80
+  tls:
+    secretName: who-tls
+
+```
