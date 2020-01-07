@@ -1,8 +1,10 @@
 #### traefik2.1 ingress文档
 
 #### 1. 创建crd资源
-#### 2. 绑定权限
-#### 3.
+#### 2. 绑定rbac权限
+#### 3. 部署traefik ingress
+#### 4. 增加traefik 管理后台路由规则
+#### 5. 暴露traefik ingress服务
 
 
 #### 增加https访问
