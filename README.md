@@ -64,3 +64,4 @@ spec:
 ## 二、灰度发布功能
 ### 实现目标
 部署两个服务一个是 whoami，一个是 nginx。利用Traefik2.0 中提供的带权重的轮询（WRR）来实现流量分流
+在 Traefik2.1 中新增了一个 TraefikService 的 CRD 资源，我们可以直接利用这个对象来配置 WRR，新建一个描述 WRR 的资源清单：(wrr.yaml)
