@@ -4,9 +4,9 @@ metadata:
   name: traefik-dashboard
 spec:
   entryPoints:
-  - traefik
+  - web
   routes:
-  - match: Host(`jianyu.ucloud.com`)
+  - match: Host(`jianyu.traefik.com`)
     kind: Rule
     services:
     - name: api@internal
