@@ -1,5 +1,5 @@
 ## traefik2.1 ingress学习文档
-## 一、负载研究
+## 一、基本功能
 ### 0.实现目标
 ```
 LoadBalancer ---> jianyu.traefik.com  访问traefik后台
@@ -60,3 +60,7 @@ spec:
 
 ```
 ### 8.测试TCP应用
+
+## 二、灰度发布功能
+### 实现目标
+部署两个服务一个是 whoami，一个是 nginx。利用Traefik2.0 中提供的带权重的轮询（WRR）来实现流量分流
